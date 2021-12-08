@@ -89,13 +89,14 @@ let dropElementOS = (e) => {
             img.src = reader.result;
             img.classList.add("dragElement");
             img.id = "dragElement";
-            img.setAttribute("draggable", "true");
+            img.setAttribute("draggable", "true")+idStart;
             img.setAttribute("ondragstart", "dragElement(event)");
             document.querySelector(".dropElementContainerOS").append(img);
         }
     })
 }
 
+idStart++;
 // let Image=document.forms
 
 
